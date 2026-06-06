@@ -1,15 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'helvetica neue';
-}
-html,
-body {
-    height: 100%;
-    width: 100%;
-    background-image: url(bgimg.png);
-}
+
 :root{
   --bg: #F5F2EF;
   --card-bg: #EDE8E4;
@@ -21,6 +10,20 @@ body {
   --pink: #E3B3B1;
   --cream: #E7E0D9;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'helvetica neue';
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url('bgimg.jpg');
+    background-size: cover;
+}
 nav{
     margin: 30px 50px 0px 90px;
     display: flex;
@@ -28,8 +31,14 @@ nav{
     align-items: center;
     font-size: 25px;
 }
+.lwbtn{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
 .navcenterbtn{
     display: flex;
+    justify-content: flex-end;
     gap: 30px;
 }
 
