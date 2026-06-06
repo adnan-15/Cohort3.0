@@ -3,7 +3,7 @@
   --bg: #F5F2EF;
   --card-bg: #EDE8E4;
   --primary: #7B8567;
-  --primary-dark: #626A54;
+  --primary-dark: #656755;
   --heading: #1A1A1A;
   --text: #6E6E6E;
   --border: #D8D2CC;
@@ -25,32 +25,65 @@ body {
     background-size: cover;
 }
 nav{
-    margin: 30px 50px 0px 90px;
+    margin: 43px 50px 0px 123px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 25px;
 }
-.lwbtn{
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
+.logobtn{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 61%;
 }
-.navcenterbtn{
-    display: flex;
-    justify-content: flex-end;
-    gap: 30px;
+.logo{
+    font-size: 55px;
+    position: relative;
 }
-
-.navcenterbtn button{
-        font-size: 18px;
-        border: none;
-        background-color: transparent;
-        color: rgb(83, 91, 79);
-    }
-
-button:hover{
-    text-decoration: underline;
-    color: black;
-    font-size: 19px;
+.navbtn{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-size: 18px;
+    color: var(--primary-dark);
+    background-color: yellow;
+    height: 50px;
+}
+.btn{
+    border: 3px solid #404135;
+}
+.btn:hover{
+    color: #404135;
+    background-color: red;
+    padding: 10px;
+}
+.navlastbtn{
+    font-size: 35px;
+    display: flex;
+    gap: 45px ;
+    align-items: center;
+}
+.ri-menu-line{
+    margin-top: 11px;
+}
+.ri-shopping-bag-line{
+    
+    position:relative;
+}
+.iconsup{
+ background-color: var(--primary-dark);
+ color: white;
+ border-radius: 50%;
+ padding: 1px 6px;
+ position: absolute;
+ transform: translateX(-13px);
+ margin: 0px;
+ font-size: 15px;
+}
+.dot{
+    color: var(--primary-dark);
+    font-size: 61px;
+    position: absolute;
+ transform: translate(-3px,-6px);
 }
