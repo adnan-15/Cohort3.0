@@ -1,89 +1,254 @@
-
-:root{
-  --bg: #F5F2EF;
-  --card-bg: #EDE8E4;
-  --primary: #7B8567;
+:root {
+  --bg: #f5f2ef;
+  --card-bg: #ede8e4;
+  --primary: #7b8567;
   --primary-dark: #656755;
-  --heading: #1A1A1A;
-  --text: #6E6E6E;
-  --border: #D8D2CC;
-  --pink: #E3B3B1;
-  --cream: #E7E0D9;
+  --heading: #1a1a1a;
+  --text: #6e6e6e;
+  --border: #d8d2cc;
+  --pink: #efb9b8;
+  --cream: #eee0d2;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'helvetica neue';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 html,
 body {
-    height: 100%;
-    width: 100%;
-    background-image: url('bgimg.jpg');
-    background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-image: url("bgimg.jpg");
+  background-size: cover;
 }
-nav{
-    margin: 43px 50px 0px 123px;
+nav {
+  margin: 43px 50px 0px 123px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+}
+.logobtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 61%;
+}
+.logo {
+  font-family: "Playfair Display", serif;
+  margin-top: 3px;
+  font-size: 56px;
+  position: relative;
+}
+.navbtn {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-size: 18px;
+  color: var(--primary-dark);
+}
+.btn {
+  font-family: "Nunito", sans-serif;
+  margin-top: 10px;
+  height: 50px;
+  font-weight: 600;
+  padding: 15px 0px;
+}
+.btn:hover {
+  color: #404135;
+  border-bottom: 3px solid #404135;
+}
+.navlastbtn {
+  font-size: 35px;
+  display: flex;
+  gap: 45px;
+  align-items: center;
+  margin-top: 15px;
+}
+.ri-menu-line {
+  margin-top: 11px;
+}
+.ri-shopping-bag-line {
+  position: relative;
+}
+.iconsup {
+  background-color: var(--primary-dark);
+  color: white;
+  border-radius: 50%;
+  padding: 1px 6px;
+  position: absolute;
+  transform: translateX(-13px);
+  margin: 0px;
+  font-size: 15px;
+}
+.dot {
+  color: var(--primary-dark);
+  font-size: 61px;
+  position: absolute;
+  transform: translate(-3px, -6px);
+}
+
+main {
+  display: flex;
+  margin: 60px 50px 0px 123px;
+}
+.first {
+  height: 750px;
+  width: 35%;
+}
+.second {
+  background-color: seagreen;
+  height: 750px;
+  width: 55%;
+}
+.third {
+  background-color: lightblue;
+  height: 750px;
+  width: 10%;
+}
+
+.leafnc {
+  display: flex;
+  align-items: center;
+  img {
+    height: 60px;
+    width: 50px;
+  }
+}
+.nc {
+  letter-spacing: 3px;
+  color: var(--primary-dark);
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+.a {
+  font-size: 110px;
+  font-weight: 400;
+  line-height: 100px;
+  font-family: "Playfair Display", sans-serif;
+}
+.line {
+  margin-top: 35px;
+  width: 70px;
+  border-bottom: 3px solid var(--primary-dark);
+}
+.crafted {
+  margin-top: 20px;
+  font-family: "Nunito", sans-serif;
+  color: var(--primary);
+  font-weight: 600;
+}
+.colors {
+  font-weight: 700;
+  display: flex;
+  width: 40%;
+  font-size: 20px;
+  margin-top: 35px;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+}
+.darkgreen {
+  background-color: var(--primary-dark);
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+.skin {
+  background-color: var(--cream);
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+.pink {
+  background-color: var(--pink);
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+.details {
+  font-weight: 700;
+  display: flex;
+  width: 25%;
+  font-size: 20px;
+  margin-top: 25px;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+}
+.line2 {
+  width: 22px;
+  border-bottom: 3px solid var(--primary);
+}
+
+.para{
+  color: var(--primary);
+  margin-top: 10px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+}
+
+.logos{
+  display: flex;
+  margin-top: 30px;
+}
+.logo1{
+  display: flex;
+  font-weight: 600;
+  flex-direction: column;
+  font-family: "Nunito",sans-serif;
+  align-items: center;
+  justify-content: center;
+  padding-right: 50px;
+  img{
+    margin-bottom: 10px;
+    height: 50px ;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #E6E6DA;
+    }
+}
+
+.logo2{
+  display: flex;
+  font-weight: 600;
+  flex-direction: column;
+  font-family: "Nunito",sans-serif;
+  align-items: center;
+  justify-content: center;
+padding-right: 50px;
+padding-left: 50px;
+  border-left: 3px solid var(--primary);
+  p{
+    margin-top: 10px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 25px;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  img{
+    height: 50px ;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #E6E6DA;
+    }
 }
-.logobtn{
- display: flex;
- justify-content: space-between;
- align-items: center;
- width: 61%;
-}
-.logo{
-    font-size: 55px;
-    position: relative;
-}
-.navbtn{
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    font-size: 18px;
-    color: var(--primary-dark);
-    background-color: yellow;
-    height: 50px;
-}
-.btn{
-    border: 3px solid #404135;
-}
-.btn:hover{
-    color: #404135;
-    background-color: red;
-    padding: 10px;
-}
-.navlastbtn{
-    font-size: 35px;
-    display: flex;
-    gap: 45px ;
-    align-items: center;
-}
-.ri-menu-line{
-    margin-top: 11px;
-}
-.ri-shopping-bag-line{
-    
-    position:relative;
-}
-.iconsup{
- background-color: var(--primary-dark);
- color: white;
- border-radius: 50%;
- padding: 1px 6px;
- position: absolute;
- transform: translateX(-13px);
- margin: 0px;
- font-size: 15px;
-}
-.dot{
-    color: var(--primary-dark);
-    font-size: 61px;
-    position: absolute;
- transform: translate(-3px,-6px);
+.logo3{
+  display: flex;
+  font-weight: 600;
+  flex-direction: column;
+  font-family: "Nunito",sans-serif;
+  align-items: center;
+  padding-right: 50px;
+  padding-left: 50px;
+  justify-content: center;
+  border-left: 3px solid var(--primary);
+  img{
+    margin-bottom: 10px;
+    height: 50px ;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #E6E6DA;
+    }
 }
