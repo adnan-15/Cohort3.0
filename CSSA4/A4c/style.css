@@ -31,7 +31,6 @@ main{
     "footer footer footer footer footer";
     gap: 10px;
 }
-
 .nav{
 background-color: yellow;
 grid-area: nav;
