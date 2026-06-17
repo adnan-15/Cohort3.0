@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'helvetica neue';
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+main{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 200px 50px 40px 1fr 1fr 1fr 1fr 1fr 40px 80px 120px;
+    grid-template-areas: 
+    "nav nav nav nav nav"
+    "top top top top top"
+    "center1 center1 center1 center1 center1 "
+    "center2 center2 img3 center2 center2 "
+    "center3 img2 img3 img4 center3 "
+    "img1 img2 img3 img4 img5 "
+    "img1 img7 img3 img4 img5 "
+    "img1 img7 img3 img6 img5 "
+    "center7 img7 img3 img6 para2022 "
+    "doubleq center8 img3 center8 rose "
+    "belowbottom belowbottom belowbottom belowbottom belowbottom"
+    "footer footer footer footer footer";
+    gap: 10px;
+}
+
+.nav{
+background-color: yellow;
+grid-area: nav;
+}
+.top{
+    background-color: red;
+    grid-area: top;
+}
+.center1{
+    background-color: tan;
+    grid-area: center1;
+}
+.center2{
+    background-color: purple;
+    grid-area: center2;
+}
+.center3{
+    background-color: tomato;
+    grid-area: center3;
+}
+.img1{
+    background-color: blue;
+    grid-area: img1;
+}
+.img2{
+    background-color: lawngreen;
+    grid-area: img2;
+}
+.img3{
+    background-color: lightpink;
+    grid-area: img3;
+}
+.img4{
+    background-color: rgb(69, 69, 130);
+    grid-area: img4;
+}
+.img5{
+    background-color: indigo;
+    grid-area: img5;
+}
+.img6{
+    background-color: aqua;
+    grid-area: img6;
+}
+.img7{
+    background-color: indianred;
+    grid-area: img7;
+}
+.center7{
+    background-color: gold;
+    grid-area: center7;
+}
+.center8{
+    background-color: chocolate;
+    grid-area: center8;
+}
+.belowbottom{
+    background-color: navajowhite;
+    grid-area: belowbottom;
+}
+.footer{
+    background-color: aquamarine;
+    grid-area: footer;
+}
