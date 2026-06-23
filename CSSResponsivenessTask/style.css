@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "helvetica neue";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+main{
+  height: 95%;
+  width: 100%;
+  background-image: url('assets/cere-memorial_matcha_wide.png');
+  background-size:cover;
+  background-position: center;
+  .top{
+    text-align: center;
+    background-color: #2A2857;
+    color: white;
+    padding: 8px;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  nav{
+    background-color: white;
+    border: 1px solid  black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin: 15px;
+    .navleft{
+      display: flex;
+      align-items: center;
+      font-size: 23px;
+      gap: 30px;
+    }
+    .navright{
+      gap: 30px;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
