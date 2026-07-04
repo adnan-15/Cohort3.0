@@ -297,3 +297,96 @@
 //     console.log("Hello");
 // }
 // console.log(test());
+
+
+// let arr = ["mango","bnana","apple","kiwi","grapes"]
+// console.log(arr[arr.length-1]);
+// console.log(arr[0]);
+// console.log(arr.length);
+// arr.push("orange")
+// console.log(arr);
+// arr.pop()
+// console.log(arr);
+// arr.unshift("stawberry")
+// console.log(arr);
+// arr.shift()
+// console.log(arr);
+// arr.reverse()
+// console.log(arr);
+
+// let arr = [3,2,8,3,7,4,5]
+// arr.sort()
+// console.log(arr);
+// arr.sort((a,b)=>b-a)
+// console.log(arr);
+
+
+// let arr = [3,4,56,7,8]
+// arr.splice(2,3)
+// console.log(arr);
+// arr.splice(1,0,4,5,6,7)
+// console.log(arr);
+// let arr2= arr.slice(0,4)
+// console.log(arr2);
+// console.log(arr2.indexOf(5));
+// console.log(arr2.includes(30));
+// console.log(arr2.join("."));
+// console.log([...[1,2],...[3,4]]);
+// console.log([...arr]);
+// console.log(Math.max(...arr));
+// let [x,y] = arr
+// console.log(x,y);
+// [x,y]= [y,x]
+// console.log(x,y);
+
+
+// let arr = [1,2,3,4,5,900]
+// console.log(arr);
+// arr.forEach(i=>console.log(i*2))
+
+// let arr2  = arr.map(i=>{return i*i})
+// console.log(arr2);
+
+// let arr2 = arr.filter(i=>{
+//   return i%2==0
+// })
+// console.log(arr2);
+
+// let arr2 = arr.reduce((acc,num)=>acc + num,0)
+// console.log(arr2);
+
+// let max = arr.reduce((acc,num)=> {if (acc>num) return acc
+//   else return num
+// },0)
+// console.log(max);
+
+// console.log(arr.find(i=>i%2==0));
+
+// console.log(arr.findIndex(i=>i>50));
+
+// console.log(arr.some(i=>i<0));
+
+// console.log(arr.every(i=>i>0));
+
+// let names = ["Adnan","sarthak","mohsin","khan"]
+// names.forEach(i=>console.log(i.toUpperCase()))
+
+// let marks = [54,76,81,45,87,99,34]
+// let student = marks.filter(i=> i>80)
+// console.log(student);
+
+
+// let avg = [4,4,4,4,4]
+// console.log((avg.reduce((acc,num)=>(acc+num),0))/avg.length);
+
+
+// let arr = [1,2,3,2,1,2,3]
+// let counts  = {}
+// for(const a of arr ){
+//   counts[a] = (counts[a]||0)+1
+// }
+// console.log(counts);
+
+
+// let arr = [1,2,3,[6,4,3,2],5]
+// arr.flat
