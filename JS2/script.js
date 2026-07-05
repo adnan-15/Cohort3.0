@@ -662,8 +662,6 @@ function boorowedBook(name,author){
 addBook("Psychology of money","Morgan housel")
 console.log(library);
 
-
-
 // const arr = [1,2,3];
 // arr[10] = 5;
 // console.log(arr.length);
