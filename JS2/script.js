@@ -388,5 +388,302 @@
 // console.log(counts);
 
 
-// let arr = [1,2,3,[6,4,3,2],5]
-// arr.flat
+// let arr = [1,2,3,[6,4,3,2],[5,3,5]]
+// console.log(arr);
+// console.log(arr.flat());
+
+
+// let arr = [1,1,2,2,3,3,4,3,2,1]
+// console.log(...new Set(arr));
+
+
+// let arr = [
+//     {name:"Adnan", age:20},
+//     {name:"hasan", age:10},
+//     {name:"sarthak", age:35}
+// ]
+// arr.sort((a,b)=>a.age-b.age);
+// console.log(arr);
+
+
+// let cart = [
+//     {shoes:500, tshirt:450,shirt:500},
+//     {shoes:900, tshirt:1000,shirt:500},
+//     {shoes:5000, tshirt:450,shirt:1000}]
+
+// let total = cart.reduce((acc,num)=>{ return acc+(num.shirt+num.shoes+num.tshirt)},0)
+// console.log(total);
+
+
+// const user = [
+//     {name:"Adnan",age:90},
+//     {name:"alice",age:12},
+//     {name:"mohd", age:20}
+// ]
+// let group = Object.groupBy(user,use=>use.age)
+// console.log(group);
+
+
+// const number = [1,2,3,4,5]
+// const chaining = number.filter(a=>a%2!==0).map(a=>a*a);
+// console.log(chaining);
+
+
+// diff btw map and foreach
+// map is used to transform and create a new arr and not change original one
+// foreach change original array and modify original array
+
+
+// let student = {
+//     name:"adnan",
+//     rollno:13,
+//     branch:"aids"
+// }
+// console.log(student.name,student.rollno,student.branch);
+// console.log(student["name"],student["rollno"],student["branch"]);
+// student.year = "3rd year"
+// console.log(student);
+// student.branch = "cse-aids"
+// console.log(student);
+// delete student.branch
+// console.log(student);
+
+
+// let method = {
+//     name:"ADNAN",
+//     add(a,b) {
+//         console.log(this.name);
+//         return a+b},
+//     sub(a,b){return a-b}
+
+// }
+// console.log(method.add(5,2));
+// console.log(method.sub(5,2));
+
+
+
+// let nestedobj = {
+//     name:"adnan",
+//     address:{
+//         city:"bhopal",
+//         state:"MP",
+//         area:{
+//             colony:"bank colony",
+//             nearby:"madina masjid"
+//         }
+//     }
+// }
+
+// console.log(nestedobj.address.area.nearby);
+
+// let {name:firstName,address="Bhopal,mp"} = nestedobj
+// console.log(firstName);
+// console.log(address);
+
+// let copy = {...nestedobj}
+// console.log(copy);
+
+
+// let extra  = {firstname:"dnan",age:90,county:"bhoopal"}
+// let merge = {...nestedobj,...extra}
+// console.log(merge);
+
+
+// let user = {name:"adnan",
+//     age:45,
+//     city:"bhopal",
+// }
+// console.log(Object.keys(user));
+
+// console.log(Object.values(user));
+
+// console.log(Object.entries(user));
+
+// for(let i in user){
+//     console.log(i,user[i]);
+// }
+
+// let frozen = Object.freeze(user)
+// user.age= 34
+// delete user.name;
+// user.lastName = "khan"
+// console.log(user);
+
+// let seal = Object.seal(user)
+// user.age= 34
+// delete user.name;
+// user.lastName = "khan"
+// console.log(seal);
+
+// let arr = [{
+//     name:"adnan",
+//     age:"20",
+//     clg:"sistec"
+// },{
+//     name:"ali",
+//     age:"90",
+//     clg:"rgpv"
+// },{
+//     name:"piyush",
+//     age:"10",
+//     clg:"oriantl"
+// }]
+
+// console.log(arr.sort((a,b)=>b.age-a.age));
+// console.log(arr[0]);
+
+
+
+
+// TODOLIST
+
+// let TodoList = []
+
+// function addTask(task){
+//     TodoList.push({id:TodoList.length+1,task,isDone:false})
+// }
+// function completeTask(task){
+//     let compltTask = TodoList.find(obj=>obj.task===task)
+//     if (compltTask) compltTask.isDone=true;
+// }
+// function deleteTask(task){
+//     TodoList = TodoList.filter(obj=>obj.task!==task)
+// }
+// function readTask(){
+//     TodoList.forEach((obj)=>{
+//         console.log(`${obj.id}. ${obj.task} Task is ${obj.isDone?"Completed":"Not Completed"}`);
+//     })
+// }
+// addTask("github lecture on sheriyans")
+// // readTask()
+// addTask("sheet 2 3 4 of phase 2")
+// readTask()
+// completeTask("sheet 2 3 4 of phase 2")
+// // readTask()
+// completeTask("github lecture on sheriyans")
+// readTask()
+// deleteTask("github lecture on sheriyans")
+// // readTask()
+// deleteTask("sheet 2 3 4 of phase 2")
+// readTask()
+
+
+
+
+// Shopping cart
+
+// let cart = []
+// function additem(item,price,quantity){
+//     cart.push({id:cart.length+1,item,price,quantity})
+// }
+// function removeitem(item){
+//     cart = cart.filter(obj=>obj.item!==item)
+// }
+// function calculateTotal(){
+//     let total = cart.reduce((acc,num)=>acc+(num.price*num.quantity),0)
+//     console.log(`Total Bill : ${total}`);
+// }
+// function quantity(item,quantity){
+//     let q = cart.find(n=>n.item===item)
+//     q.quantity+=quantity
+// }
+// function readTask(){
+//     cart.forEach((obj)=>{
+//         console.log(`${obj.id}. ${obj.item} ${obj.price} ${obj.quantity}`);
+//     })
+// }
+// additem("dairy milk",10,2)
+// additem("cold drink",10,1)
+// // readTask()
+// // calculateTotal()
+// additem("popcorn",20,1)
+// // calculateTotal()
+// quantity("cold drink",5)
+// // calculateTotal()
+// // readTask()
+// removeitem("dairy milk")
+// // readTask()
+// removeitem("popcorn")
+// readTask()
+// calculateTotal()
+
+
+// Student Grade Tracker
+
+// let students = [
+//     { name: "Aman", marks: [80, 90, 75] },
+//     { name: "Priya", marks: [95, 85, 92] },
+//     { name: "Raj", marks: [60, 55, 70] }
+// ];
+
+// function avgMarks(name){
+//      return (students.find(s=> s.name === name)).marks.reduce((acc,n)=>acc+n,0)/3;
+// }
+// function Grade(name){
+//     let avg = avgMarks(name)
+//     if (avg>=90) return "A"
+//     else if(avg>=75) return "B"
+//     else if(avg>=60) return "C"
+//     else return "Fail"
+// }
+
+// students.forEach(s=>{
+//     console.log(`${s.name} : Avg = ${avgMarks(s.name).toFixed(2)} , Grade = ${Grade(s.name)}`);
+// })
+
+
+//Word Frequency Counter
+
+// function wordFrequencyCounter(text){
+//     text = text.split(" ")
+//     let obj = {}
+//     text.forEach(element => {
+//         obj[element] = (obj[element]||0)+1
+//     });
+//     return obj
+// }
+
+// let text =
+// "the quick brown fox jumps over the lazy dog the fox is quick";
+// console.log(wordFrequencyCounter(text));
+
+
+// const arr = [1,2,3];
+// arr[10] = 5;
+// console.log(arr.length);
+// console.log(typeof []);
+// console.log([] == false);
+// console.log([1,2] + [3,4]);
+
+// function x(a,b){
+//    return a+b;
+// }
+// console.log(x(2));
+
+
+// Array.prototype.myMap = function(callback){
+//     let result = []
+//     for(let i =0 ; i<this.length; i++){
+//         result.push(callback(this[i],i,this))
+//     }
+//     return result;
+// }
+
+// console.log([1,2,3].myMap(x=>x*2));
+
+
+
+// Array.prototype.Myfilter = function(callback){
+//     let ans = []
+//     for(let i=0; i<this.length ; i++){
+//         let check = callback(this[i],i,this)
+//        if (check){
+//         ans.push(this[i])
+//        }
+//     }
+//     return ans
+// }
+// console.log([1,2,3].Myfilter(x=>x%2!==0));
+
+
+
