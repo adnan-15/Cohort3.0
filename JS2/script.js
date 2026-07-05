@@ -648,6 +648,33 @@
 // console.log(wordFrequencyCounter(text));
 
 
+//Library Management System
+
+let library = []
+
+function addBook(name,author){
+    library.push({id:library.length+1,name,author,boorowed:false})
+}
+function boorowedBook(name,author){
+    library.find(s=>s.name===name).boorowed = true
+}
+
+addBook("Psychology of money","Morgan housel")
+console.log(library);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // const arr = [1,2,3];
 // arr[10] = 5;
 // console.log(arr.length);
