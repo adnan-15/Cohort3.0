@@ -650,17 +650,44 @@
 
 //Library Management System
 
-let library = []
+// let library = []
 
-function addBook(name,author){
-    library.push({id:library.length+1,name,author,boorowed:false})
-}
-function boorowedBook(name,author){
-    library.find(s=>s.name===name).boorowed = true
-}
+// function addBook(name,author){
+//     library.push({id:library.length+1,
+//         name,author,boorowed:false})
+// }
+// function boorowedBook(name){
+//     let book =library.find(s=>s.name===name)
+//     if(!book) return "Book not found"
+//     if(book.boorowed) return "Already boorowed"
 
-addBook("Psychology of money","Morgan housel")
-console.log(library);
+//     book.boorowed = true
+//     return `You boorowed ${book.name} book`
+// }
+// function returnBook(name){
+//     let book = library.find(b => b.name === name)
+//     if(!book) return "Book not found"
+//     book.boorowed = false
+//     return `You return ${name} book`
+// }
+// function checkBooks(){
+//     console.log("Available Books");
+//     library.forEach(b =>{
+//         if(!b.boorowed){
+//              console.log(`BookNo. : ${b.id}, Book-Title : ${b.name}, Book-Author : ${b.author}`)
+//         }
+//     });
+// }
+// addBook("Psychology of money","Morgan housel")
+// addBook("IKIGAI","Hector Garcia")
+// addBook("Atomic habits","James Clear")
+// checkBooks()
+// console.log(boorowedBook("IKIGAI"));
+// checkBooks()
+// console.log(returnBook("IKIGAI"));
+// checkBooks()
+
+
 
 // const arr = [1,2,3];
 // arr[10] = 5;
@@ -701,3 +728,74 @@ console.log(library);
 
 
 
+// Array.prototype.Myreduce = function (callback, initialValue) {
+//     let acc;
+//     let startIndex;
+
+//     if (this.length === 0) {
+//         if (arguments.length > 1) {
+//             return initialValue;
+//         }
+//         throw new TypeError("Reduce of empty array with no initial value");
+//     }
+
+//     if (arguments.length > 1) {
+//         acc = initialValue;
+//         startIndex = 0;
+//     } else {
+//         acc = this[0];
+//         startIndex = 1;
+//     }
+
+//     for (let i = startIndex; i < this.length; i++) {
+//         acc = callback(acc, this[i], i, this);
+//     }
+
+//     return acc;
+// };
+
+// console.log([1,2,3].Myreduce((acc,n)=>acc-n,5));
+
+
+//sheet 2
+// let arr = ["spider man","domsday","toxic","KGF","totaldhamal"]
+// for(let i=0; i<arr.length; i++){
+//     console.log(arr[i]);
+// }
+
+
+// let arr = [12,2,3,"khan","adnan",true,false,[1,2,3,4]]
+// console.log(arr[7]);
+// console.log(arr[0],arr[arr.length-1]);
+// let temp = arr[1]
+// arr[1] = arr[arr.length-2]
+// arr[arr.length-2]=temp;
+// console.log(arr);
+
+
+// let arr = [[1,2,3],[4,5,6],[7,8,9]]
+// console.log(arr[0][0],arr[1][0],arr[2][0]);
+// console.log(arr[0][0]|+arr[1][1]+arr[2][2]);
+
+// let arr = [12,2,3,"khan","adnan",true,false]
+// // console.log(arr.length);
+// let checklength = function(){
+//     let len = arr.length;
+//     if(len%2==0){
+//         return "length is even"
+//     }
+//     else{
+//         return "length is odd"
+//     }
+// }
+// console.log(checklength());
+
+
+let arr = [1,2,3,4,5]
+let arr1 = []
+// arr.push(1,2,3)
+// console.log(arr);
+for(let i =0 ; i<arr.length; i++){
+    arr1.push(arr[i])
+}
+console.log(arr1);
