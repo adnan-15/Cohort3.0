@@ -973,15 +973,15 @@
 //  ));
 
 
-let products = [
-  { name: "Laptop", price: 50000 },
-  { name: "Phone", price: 20000 },
-];
+// let products = [
+//   { name: "Laptop", price: 50000 },
+//   { name: "Phone", price: 20000 },
+// ];
 
-let newproducts = products.map((n)=>{
-    return {
-        name : n.name,
-        price : n.price,
-        discountPrice:n.price-(n.price/10)
-    }});
-console.log(newproducts);
+// let newproducts = products.map((n)=>{
+//     return {
+//         name : n.name,
+//         price : n.price,
+//         discountPrice:n.price-(n.price/10)
+//     }});
+// console.log(newproducts);
