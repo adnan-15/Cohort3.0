@@ -757,7 +757,23 @@
 // console.log([1,2,3].Myreduce((acc,n)=>acc-n,5));
 
 
-//sheet 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//SHEET 2
 // let arr = ["spider man","domsday","toxic","KGF","totaldhamal"]
 // for(let i=0; i<arr.length; i++){
 //     console.log(arr[i]);
@@ -791,11 +807,134 @@
 // console.log(checklength());
 
 
-let arr = [1,2,3,4,5]
-let arr1 = []
-// arr.push(1,2,3)
+// let arr = [1,2,3,4,5]
+// let arr1 = []
+// // arr.push(1,2,3)
+// // console.log(arr);
+// for(let i =0 ; i<arr.length; i++){
+//     arr1.push(arr[i])
+// }
+// console.log(arr1);
+
+
+
+// let arr = [1,2,3,4]
+// console.log(arr.pop());
+// while(arr.length!=0){
+//     console.log(arr.pop());
+// }
+
+
+
+// let username = ["Adnan","ibad","charlie","suhana"]
+// console.log(username);
+// username.unshift("kk","piush","kunal",'rakesh')
+// console.log(username);
+
+
+// username.shift()
+// console.log(username);
+// while(username.length>2){
+//     username.shift()
+// }
+// console.log(username);
+
+
+// let arr = ["Adnan","ibad","charlie","suhana","abdul "]
 // console.log(arr);
-for(let i =0 ; i<arr.length; i++){
-    arr1.push(arr[i])
-}
-console.log(arr1);
+
+// arr.splice((arr.length/2)-1,2)
+// arr.splice((arr.length/2)-1,3,"kk","husna","talha","sami","alin")
+// arr.reverse();
+
+// let temp = arr[0]
+// arr[0]=arr[2]
+// arr[2]=temp;
+// console.log(arr);
+
+
+
+// let arr = [5,4,2,6,3,1]
+// console.log(arr);
+// let even = (arr.filter(a=>a%2==0)).sort();
+// let odd = (arr.filter(a=>a%2!=0)).sort();
+// console.log(even.concat(odd));
+// let newarr = arr.slice(0,4)
+// let newarr = arr.slice(1,arr.length-1)
+// console.log(newarr);
+// let arr2 = [1,2,3,4,5]
+// console.log(arr.concat(arr2));
+// let arr3 =  [3,5,7,9,0]
+// let combinationof3=arr.concat(arr2).concat(arr3);
+// let removedup = []
+// // console.log(removedup.includes(a));
+// combinationof3.forEach((n)=>
+//     {
+//     if(!removedup.includes(n)){
+//         removedup.push(n)
+//     }
+// }
+// )
+// console.log(removedup);
+// let arr = ["mango","apple","banana"]
+// let arrcheck = ["mango","kiwi","apple","pineapple"]
+// function inclu(arr){
+//     if(arr.includes("apple")) return true
+// else return false
+// }
+// console.log(inclu(arr));
+
+// for (let index = 0; index < arrcheck.length; index++) {
+//     if(arr.includes(arrcheck[index])){
+//         console.log(true);
+//     }
+//     else console.log(false);
+// }
+
+
+
+// let arr = ["Adnan","ibad","charlie","rahul","abdul"]
+// console.log(arr.indexOf("rahul"));
+
+//  let arr = [1,5,3,4,5,2,3,5]
+// for(let i=0; i<arr.length; i++){
+//     if(arr[i]===5) console.log(i);
+//  }
+
+
+
+// let arr = ["Adnan","is","became","a","Developer"]
+// console.log(arr.join(","));
+// console.log(arr.join(" "));
+// for(let i=0 ; i<arr.length; i++){
+//     // console.log(arr[i]);
+//     if(i%2==0) console.log(arr[i]);
+// }
+// for(let i of arr){
+//     console.log(i);
+// }
+
+
+// let char = ['a','b','i','u','e','f','g','i','p','u','o']
+// let vowels = ['u','a','i','o','e']
+// for(let i of char){
+//     if(vowels.includes(i)) console.log("vowels");
+// }
+
+
+// let arr = [1,2,34,45,5]
+// let arr2 = [...arr]
+// arr2[2]="modify"
+// console.log(arr);
+// console.log(arr2);
+
+
+// let arr1 = [1,2,3]
+// let arr2 = [4,5,6]
+// let arr3= [7,8,9]
+// let mergedArray = [...arr1,...arr2,...arr3]
+// console.log(mergedArray);
+// mergedArray.splice(3,0,55,90)
+// mergedArray.splice(6,0,50,100)
+// console.log(mergedArray);
+
