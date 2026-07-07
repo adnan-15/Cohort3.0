@@ -938,3 +938,50 @@
 // mergedArray.splice(6,0,50,100)
 // console.log(mergedArray);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// SHEET 3
+// let prices = [100, 250, 399, 499];
+// prices.forEach(n=>console.log(`₹${n}`))
+
+
+// let students = [
+//   { name: "Anubhav", marks: 85 },
+//   { name: "Rahul", marks: 42 },
+//   { name: "Aman", marks: 90 },
+// ];
+// students.forEach(n=>{
+//     if(n.marks>50) console.log(`${n.name} Pass`);
+//     else console.log(`${n.name} Fail`);
+// })
+
+
+// let names = ["anubhav", "rahul", "aman"];
+// console.log(names.map((n)=>console.log(n.toUpperCase())
+//  ));
+
+
+let products = [
+  { name: "Laptop", price: 50000 },
+  { name: "Phone", price: 20000 },
+];
+
+let newproducts = products.map((n)=>{
+    return {
+        name : n.name,
+        price : n.price,
+        discountPrice:n.price-(n.price/10)
+    }});
+console.log(newproducts);
