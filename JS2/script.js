@@ -757,7 +757,12 @@
 // console.log([1,2,3].Myreduce((acc,n)=>acc-n,5));
 
 
-
+// deep clone function
+// let og =[1,2,3,4,{1:"adnan"},"fasd",'d',true,2.4,[2,2,34]]
+// let deepcopy = structuredClone(og) //itis use to safe the original one
+// console.log(og);
+// deepcopy[4].key = "han"
+// console.log(deepcopy);
 
 
 
@@ -982,3 +987,143 @@
 //         discountPrice:n.price-(n.price/10)
 //     }});
 // console.log(newproducts);
+
+
+// let arr = [1,2,3,4,5,6,7,8];
+// console.log(arr.filter(a=>a%2==0));
+// console.log(arr);
+
+// let users = [
+//   { name: "Anubhav", active: true },
+//   { name: "Rahul", active: false },
+//   { name: "Aman", active: true },
+// ];
+// console.log(users.filter(a=>a.active===true));
+
+// let nums = [10,20,30,40];
+// console.log(nums.reduce((acc,num)=>acc+num));
+
+// let fruits = ["apple", "banana", "apple", "orange", "banana", "apple"];
+// let obj ={}
+// fruits.forEach((fruit)=>{
+//     obj[fruit] = (obj[fruit] || 0)+1;
+// })
+// console.log(obj);
+
+
+// let nums = [20, 35, 60, 80];
+// console.log(nums.find(n=>n>=50));
+
+// let users = [
+//   { username: "rahul" },
+//   { username: "admin" },
+//   { username: "aman" }
+// ];
+// console.log(users.find(n=>n.username==="admin"));
+
+// let nums = [10, 40, 90, 50];
+// console.log(nums.findIndex(n=>n===90));
+
+// let students = [
+//   { name: "A", marks: 90 },
+//   { name: "B", marks: 30 },
+//   { name: "C", marks: 70 },
+// ];
+// console.log(students.findIndex(n=>n.marks<40));
+
+
+// let nums = [10,20,-5,40]
+// console.log(nums.some(n=>n<0));
+
+// let products = [
+//   { name: "Laptop", stock: 5 },
+//   { name: "Phone", stock: 0 },
+// ];
+// console.log(products.some(n=>n.stock===0));
+
+// let nums = [10, 20, 30, 40];
+// console.log(nums.every(n=>n>=0));
+
+// let students = [
+//   { name: "A", marks: 80 },
+//   { name: "B", marks: 45 },
+//   { name: "C", marks: 60 },
+// ];
+// console.log(students.every(n=>n.marks>=40));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// SHEET 4 
+// let student = {name:"adnan",age:20,course:"cohort3"}
+// for(let key in student){
+//     console.log(`${key} : ${student[key]}`);   
+// }
+
+// const car = {
+//   brand: "BMW",
+//   model: "M4",
+//   year: 2022
+// }
+// console.log(car.brand,car.model);
+// console.log(car["brand"],car["model"]);
+
+// const user = {
+//   name: "Anubhav",
+//   age: 20
+// }
+// console.log(user);
+// user.age = 25
+// user.isAdmin= true;
+// console.log(user);
+
+// const account = {
+//   username: "john",
+//   password: "12345"
+// }
+// console.log(account);
+// delete account.password
+// console.log(account);
+
+// function countProperties({...obj}){
+//     return Object.keys(obj).length;
+// }
+// console.log(countProperties({a:1,b:2,c:3}));
+
+
+// const person = {
+//   name: "Rahul",
+//   age: 22,
+//   city: "Delhi"
+// }
+// for(let key in person){
+//     console.log(key ,": ",person[key]);
+// }
+
+// let obj = {email:"adnankhan0339@gmial.com"}
+// console.log("email" in obj);
+
+// const obj1 = { a: 1, b: 2 }
+// const obj2 = { c: 3, d: 4 }
+// let mergeObj = {...obj1,...obj2}
+// console.log(mergeObj);
+
+// const user = {
+//   name: "Aman",
+//   age: 21
+// }
+// console.log(Object.entries(user));
