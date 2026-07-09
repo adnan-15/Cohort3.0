@@ -765,6 +765,112 @@
 // console.log(deepcopy);
 
 
+// student management System
+// let student = [{name:"Adnan khan",rollno:1,gpa:7.5,course:"CSE-Ai/Ds"}]
+// function addOrUpdateStudent(stuname,sturollno,stugpa,stucourse){
+//    let s1 = student.find(n=>n.rollno ===sturollno)
+//    if (s1!==undefined){
+//     s1.name= stuname
+//     s1.gpa= stugpa
+//     s1.course= stucourse
+//     s1.rollno= sturollno
+//     }
+//     else {
+//         student.push({
+//     name:stuname,
+//     rollno: sturollno,
+//     gpa: stugpa,
+//     course:stucourse
+//     })
+//     }
+// }
+
+// function deleteStudent(sturollno){
+//     let s1 = student.find(n=>n.rollno ===sturollno)    
+//     console.log(`${s1.name} is removed from the list`);
+//     student = student.filter(n=>n.rollno!==s1.rollno)
+// }
+// function allStudent(){
+//     console.log(`There are Total ${student.length} Students
+// and there details are given below :-`);
+    
+//     student.forEach((n)=>{
+//         console.log(`Student roll no : ${n.rollno}
+// Student name : ${n.name}
+// Student course : ${n.course}
+// Student CGPA : ${n.gpa}`);      
+//     })
+// }
+// function getStudentByRollno(sturollno){
+//     let s1 = student.find((n)=>n.rollno === sturollno) 
+//     if(s1)   {
+//         console.log(`Student roll no : ${s1.rollno}
+// Student name : ${s1.name}
+// Student course : ${s1.course}
+// Student CGPA : ${s1.gpa}`);      
+//     }
+//     else{
+//         console.log("Student is not in the list");
+//     }
+// }
+
+// function getStudentByName(stuname){
+//     let s1 = student.find((n)=>n.name === stuname) 
+//     if(s1)   {
+//         console.log(`Student roll no : ${s1.rollno}
+// Student name : ${s1.name}
+// Student course : ${s1.course}
+// Student CGPA : ${s1.gpa}`);      
+//     }
+//     else{
+//         console.log("Student is not in the list");
+//     }
+// }
+// function getStudentByCourse(stucourse){
+//     let s1 = student.find((n)=>n.course === stucourse) 
+//     if(s1)   {
+//         console.log(`Student roll no : ${s1.rollno}
+// Student name : ${s1.name}
+// Student course : ${s1.course}
+// Student CGPA : ${s1.gpa}`);      
+//     }
+//     else{
+//         console.log("Student is not in the list");
+//     }
+// }
+// function getStudentByGrade(stugpa){
+//     let s1 = student.find((n)=>n.gpa === stugpa) 
+//     if(s1)   {
+//         console.log(`Student roll no : ${s1.rollno}
+// Student name : ${s1.name}
+// Student course : ${s1.course}
+// Student CGPA : ${s1.gpa}`);      
+//     }
+//     else{
+//         console.log("Student is not in the list");
+//     }
+// }
+// addOrUpdateStudent("Adnan khan",1,7.6,"CSE-Ai/Ds")
+// addOrUpdateStudent("Ibaad ullah khan",2,6,"CSE")
+// addOrUpdateStudent("Shariq hasan",3,7,"CSE-IT")
+// addOrUpdateStudent("Amaan khan",4,8.2,"CSE-Cyber")
+// addOrUpdateStudent("piyush goel",5,6,"Mechanical")
+// allStudent()
+// deleteStudent(1)
+// allStudent()
+// getStudentByRollno(5)
+// getStudentByRollno(2)
+// getStudentByRollno(1)
+// getStudentByCourse("CSE-Ai/Ds")
+// getStudentByGrade(7)
+// getStudentByName("Amaan khan")
+
+
+
+
+
+
+
 
 
 
@@ -1127,3 +1233,71 @@
 //   age: 21
 // }
 // console.log(Object.entries(user));
+
+// const marks = {
+//   Anubhav: 95,
+//   Rahul: 82,
+//   Aman: 90,
+// }
+// console.log((Object.entries(marks).sort((a,b)=>a[1]-b[1]).reverse())[0][0]);
+
+// const salaries = {
+//   john: 1000,
+//   alex: 2000,
+//   bob: 1500
+// }
+// console.log(Object.values(salaries).reduce((acc,num)=>acc+num));
+
+
+// const user = {
+//   name: "Anubhav",
+//   address: {
+//     city: "Bhopal",
+//     pincode: 462001
+//   }
+// }
+// console.log(user.address.city,user.address.pincode);
+
+
+// let obj = {
+//     name:"adnan",
+//     marks:90,
+//     getResult:function(){
+//         if(this.marks>40)
+//         {
+//             console.log("Pass")
+//         }
+//         else{
+//             console.log("Fail")
+//         }
+//     }
+// }
+// obj.getResult();
+
+
+// const arr = ["name", "Anubhav", "age", 24]
+// let obj = {}
+// for(let i =0 ; i<arr.length; i+=2){
+//     obj[arr[i]]=arr[i+1]
+// }
+// console.log(Object.entries(obj));
+
+
+// let word = "banana"
+// let obj = {}
+// for(let i of word){
+//     obj[i] = (obj[i] || 0)+1;
+// }
+// console.log(Object.entries(obj));
+
+const users = [
+  { name: "A", age: 20 },
+  { name: "B", age: 21 },
+  { name: "C", age: 20 }
+]
+let obj = {}
+for(let i of users){
+    
+}
+console.log(Object.entries(obj));
+
