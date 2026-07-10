@@ -1290,14 +1290,65 @@
 // }
 // console.log(Object.entries(obj));
 
-const users = [
-  { name: "A", age: 20 },
-  { name: "B", age: 21 },
-  { name: "C", age: 20 }
-]
-let obj = {}
-for(let i of users){
-    
-}
-console.log(Object.entries(obj));
+// const users = [
+//   { name: "A", age: 20 },
+//   { name: "B", age: 21 },
+//   { name: "C", age: 20 }
+// ]
+// let obj = {}
+// users.forEach((n)=>{
+//   if(obj[n.age]){
+//     obj[n.age].push(n);
+//   }
+//   else{obj[n.age]=[n] }
+// })
+// console.log(obj);
 
+
+// let obj = { user:{ address: { city:"Bhopal",pin:462008}}}
+// let pro = "user.address.city"
+// pro = pro.split(".")
+// // console.log(pro[0],pro[1],pro[2]);
+// // console.log(obj[pro[0]][pro[1]][pro[2]]);
+// let deepindex =obj;
+// for(let i = 0; i<pro.length; i++){
+//   if(deepindex[pro[i]]){
+//     console.log(deepindex);
+    
+//     deepindex = deepindex[pro[i]]
+//   }
+//   else { 
+//     console.log("not exists");
+//     break;
+//   }
+// }
+// console.log(deepindex);
+
+// let obj1 = {a:1,b:2}
+// let obj2 = {a:1,b:2}
+// let flag = true;
+// for(let i=0; i<Object.keys(obj1).length; i++){
+// if(Object.keys(obj1).length !== Object.keys(obj2).length) {flag = false
+//  break;}
+//   if(Object.keys(obj1)[i] !== Object.keys(obj2)[i]){
+//     flag = false
+//     break;
+//   }
+//   if(Object.values(obj1)[i] !== Object.values(obj2)[i]){
+//     flag = false
+//     break;
+//   }
+// }
+// console.log(flag);
+
+
+// let arr = [
+//   {id:1,name:"A"},
+//   {id:2,name:"B"},
+//   {id:1,name:"A"}
+// ]
+// let removeduplicate =[]
+// arr.forEach((n)=>{
+//   if(!removeduplicate.find((m)=>m.id===n.id)) removeduplicate.push(n)
+// })
+// console.log(removeduplicate);
