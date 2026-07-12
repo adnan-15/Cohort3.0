@@ -900,14 +900,19 @@
 // returnBook("IKIGAI")
 // readBooks()
 
-
-
-
-
-
-
-
-
+// Expence tracker
+// wallet =[]
+// function addMoney(amount,category){
+//     wallet.push({id:wallet.length+1,Amount:Number(amount),Category:category})
+// }
+// function getTotal(){
+//     return wallet.reduce((total,item)=>total+item.Amount,0)
+// }
+// addMoney(800,"shoes")
+// addMoney(2800,"Watch")
+// addMoney(550,"glasses")
+// console.log(getTotal());
+// console.log(wallet);
 
 
 
