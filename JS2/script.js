@@ -865,9 +865,40 @@
 // getStudentByGrade(7)
 // getStudentByName("Amaan khan")
 
+//library management System 
 
-
-
+// let library = []
+// function addBook(bookname){
+//     library.push({id:library.length+1,BookName:bookname,borrowed:false })
+//     console.log(`${bookname} book is added to the library`);
+// }
+// function borrowedBook(bookname){
+//     let book = library.find(n=>n.BookName===bookname)
+//     book.borrowed=true;
+//     console.log(`${book.BookName} is issued`);
+// }
+// function returnBook(bookname){
+//     let book = library.find(n=>n.BookName===bookname)
+//     book.borrowed=false;
+//     console.log(`${book.BookName} is returned`);
+// }
+// function readBooks(){
+//     library.forEach(n=>{
+//         console.log(`${n.id}. ${n.BookName} is ${n.borrowed?"Borrowed":"Not Borrowed"}`);
+//     })
+// }
+// addBook('Psychology of money')
+// addBook('atomic habits')
+// addBook('IKIGAI')
+// readBooks()
+// borrowedBook("atomic habits")
+// borrowedBook("Psychology of money")
+// borrowedBook("IKIGAI")
+// readBooks()
+// returnBook("atomic habits")
+// returnBook("Psychology of money")
+// returnBook("IKIGAI")
+// readBooks()
 
 
 
