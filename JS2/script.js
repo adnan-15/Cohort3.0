@@ -914,6 +914,56 @@
 // console.log(getTotal());
 // console.log(wallet);
 
+// inventory management System
+// let inventory = []
+
+// function addIn(n,q,p){
+//     inventory.push({id:inventory.length+1,item:n,quantity:q,price:p})
+//     console.log(`Item added successfully : ${n}`);
+// }
+// function updateIn(id,q,p){
+//     let update = inventory.find(n=>n.id===id)
+//     update.quantity=q
+//     update.price=p
+//     console.log(`Item update successfully : ${update.item}`);
+// }
+
+// function removeIn(id){
+//     inventory = inventory.filter(n=>n.id!==id)
+//     console.log(`Item removed successfully`);
+// }
+
+// function readIn(){
+//     console.table(inventory)
+// }
+// addIn("cycle",2,4000)
+// addIn("tool Box",1,2000)
+// addIn("machine",1,7000)
+// addIn("cooler",1,20000)
+// addIn("fan",2,4000)
+// readIn()
+// updateIn(1,1,2000)
+// updateIn(5,5,10000)
+// readIn()
+// removeIn(2)
+// removeIn(3)
+// readIn()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
