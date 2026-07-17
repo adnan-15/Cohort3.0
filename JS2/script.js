@@ -949,11 +949,31 @@
 // removeIn(3)
 // readIn()
 
+// function utilityfun(a,b){
+//     return a+b
+// }
+// function square(a){
+//  return a*a
+// }
+// let compose =(a,b) => square(utilityfun(a,b))
+// console.log(compose(5,5));
 
+// let obj = {
+//     add:(a,b)=>{
+//         return a+b
+//     },
+//     sub:(a,b)=>{
+//         return a-b
+//     },
+//     mul:(a,b)=>{
+//         return a*b
+//     },
+//     div:(a,b)=>{
+//         return a/b
+//     }
+// }
 
-
-
-
+// console.log(obj.div(15,50));
 
 
 
@@ -1438,3 +1458,146 @@
 //   if(!removeduplicate.find((m)=>m.id===n.id)) removeduplicate.push(n)
 // })
 // console.log(removeduplicate);
+
+
+// pratice session 7
+// let prices= [100,250,500,150,700];
+// console.log(prices.filter(n=>n>300));
+
+// let marks= [80,90,70,85,95];
+// console.log((marks.reduce((n,a)=>n+a))/marks.length);
+
+// let numbers= [1,2,3,2,4,2,5,1,1,1];
+// let app = {}
+// for(let i in numbers){
+//     app[i]= (app[i]||0)+1
+// }
+// console.log(app[Math.max(...Object.values(app))]);
+
+// let user= {
+// name:"Ritik",
+// age:20
+// };
+
+// user.age = 21
+// console.log(user);
+
+// let user= {
+// name:"Ritik",
+// age:20,
+// city:"Bhopal"
+// }; 
+// for(let i in user){
+//     console.log(i,":",user[i]);
+// }
+// console.log(Object.entries(user));
+
+// let employees= {
+// aman:25000,
+// ritik:50000,
+// priya:45000
+// };
+
+// let va = Math.max(...Object.values(employees))
+// for(let i in employees){
+//     if(va == employees[i]){
+//         console.log(i);
+//     }
+// }
+
+// let greet  = function (name){
+//     console.log(`Hello ${name}`);
+// }
+// greet("adnan")
+
+// function cal(n){
+//     console.log(n-n/10);
+// }
+// cal(500)
+
+// function sum(...n){
+//     return n.reduce((acc,num)=>acc+num)
+// }
+// console.log(sum(1,2,3));
+
+// let users= [
+// { name:"Ritik", age:20 },
+// { name:"Aman", age:16 },
+// { name:"Priya", age:25 }
+// ];
+
+// function getA(users){
+//     return users.filter(n=>n.age>=18)
+// }
+// console.log(getA(users));
+
+
+// let cart= [
+// { name:"Mouse", price:500, qty:2 },
+// { name:"Keyboard", price:1000, qty:1 },
+// { name:"Monitor", price:10000, qty:1 }
+// ];
+// let total = 0;
+// function g(ca){
+//     ca.map(n=>total +=(n.price*n.qty))
+//    return total;
+// }
+// console.log(g(cart));
+
+
+// let students= [
+// {
+// name:"Ritik",
+// marks: [80,90,85]
+// },
+// {
+// name:"Aman",
+// marks: [50,40,60]
+// }
+// ];
+// for(let i in students){
+//     if(students[i].marks){
+//         students[i].average=(students[i].marks.reduce((a,n)=>a+n))/students[i].marks.length
+//         delete students[i].marks
+//         if(students[i].average>=80){
+//             students[i].grade= "A"
+//         }
+//         else{
+//             students[i].grade= "C"
+//         }
+//     }
+// }
+// console.log(students);
+
+// let library = [{
+// id:1,
+// title:"Atomic Habits",
+// author:"James Clear",
+// borrowed:false
+// }]
+// function addBook(title,author){
+//     library.push({id:library.length+1,title:title,author:author,borrowed:false})
+// }
+// function borrowBook(id){
+//     let i =  library.filter(n=>n.id===id)
+//     i[0].borrowed = true;
+// }
+// function returnBook(id){
+//     let i =  library.filter(n=>n.id===id)
+//     i[0].borrowed = false;
+// }
+// function showAvailableBooks(){
+//     library.forEach(element => {
+//         console.log(element);
+//     });
+// }
+
+
+// addBook("Psychology of money","jaico")
+// addBook("50 Laws of power","alice hood")
+// addBook("atomic habits","jams")
+// showAvailableBooks()
+// borrowBook(3)
+// showAvailableBooks()
+// returnBook(3)
+// showAvailableBooks()
