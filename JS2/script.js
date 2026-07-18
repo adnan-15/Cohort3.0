@@ -1316,7 +1316,6 @@
 // }
 // console.log(countProperties({a:1,b:2,c:3}));
 
-
 // const person = {
 //   name: "Rahul",
 //   age: 22,
