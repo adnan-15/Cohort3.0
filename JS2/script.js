@@ -1034,7 +1034,6 @@
 // console.log(arr1);
 
 
-
 // let arr = [1,2,3,4]
 // console.log(arr.pop());
 // while(arr.length!=0){
@@ -1153,6 +1152,13 @@
 // mergedArray.splice(3,0,55,90)
 // mergedArray.splice(6,0,50,100)
 // console.log(mergedArray);
+
+
+
+
+
+
+
 
 
 
