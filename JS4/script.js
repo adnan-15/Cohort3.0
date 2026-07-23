@@ -86,37 +86,110 @@
 
 // classical inheritence
 
-class User {
-    constructor(fname,lname,contact){
-        this.fname = fname
-        this.lname = lname
-        this.contact = contact
+// class User {
+//     constructor(fname,lname,contact){
+//         this.fname = fname
+//         this.lname = lname
+//         this.contact = contact
+//     }
+//     greet(){
+//         console.log('Welcome User',this.fname);
+//     }
+// }
+
+// class Admin extends User {
+//     constructor(fname,lname,contact){
+//         super(fname,lname,contact)
+//         this.adminAccess = true
+//     }
+//     addCourse(){
+//         console.log('New Course Added');
+//     }
+//     removeAllCourses(){
+//         console.log('All Courses Removed');
+//     }
+//     greet(){
+//         console.log('Welcome Admin',this.fname);
+//     }
+// }
+
+// var u1 = new User('Harsh','Singh',887867)
+// var u2 = new Admin('Sarthak','Sharma',5432)
+
+// u1.greet()
+// u2.greet()
+// u2.addCourse()
+// u2.removeAllCourses()
+
+
+// let place =
+// {
+//     placeName : "office",
+//     behaviour:"proffessional",
+//     sayHello:function(){
+//         const insidePlace = {
+//             placeName:"Meeting Room",
+//             behaviour :"Roasting",
+//             infrontofFriends:function(){
+//                 console.log(this.behaviour);
+//             },
+//             infrontofClients:()=>{
+//                 console.log(this.behaviour);
+//             }
+//         }
+//         insidePlace.infrontofFriends()
+//         insidePlace.infrontofClients()
+//     }
+// }
+
+// place.sayHello()
+
+
+// function introduce(city, country) {
+//   console.log(`Main ${this.name} hoon, ${city}, ${country} se`);
+// }
+// const person = { name: "Rahul" };
+
+// introduce.call(person, "Indore", "India");
+// // Main Rahul hoon, Indore, India se
+
+// introduce.apply(person, ["Indore", "India"]);
+// // Main Rahul hoon, Indore, India se
+
+// const boundFn = introduce.bind(person);
+// boundFn("Indore", "India");
+// // Main Rahul hoon, Indore, India se
+
+
+// function CreateBook(bookName,authorName){
+//     this.bookName = bookName,
+//     this.authorName = authorName,
+//     this.pages = 560
+// }
+// let book1 = new CreateBook("HP - philosopher stone",'JK Rowling')
+// let book2 = new CreateBook("HP - chamber of secrets")
+
+// console.log(book1);
+// console.log(book2);
+
+class MakeStudents{
+    constructor(bookName,authorName,isVerified){
+        this.bookName = bookName,
+    this.authorName = authorName,
+    this.pages = 560,
+    this.isVerified = isVerified;
     }
-    greet(){
-        console.log('Welcome User',this.fname);
+    showBook = function (){
+        if(this.isVerified){
+            console.log(`${this.bookName,this.authorName,this.pages}`);
+            
+        }
+        else{
+            console.log('book not verified');
+            
+        }
     }
 }
 
-class Admin extends User {
-    constructor(fname,lname,contact){
-        super(fname,lname,contact)
-        this.adminAccess = true
-    }
-    addCourse(){
-        console.log('New Course Added');
-    }
-    removeAllCourses(){
-        console.log('All Courses Removed');
-    }
-    greet(){
-        console.log('Welcome Admin',this.fname);
-    }
-}
-
-var u1 = new User('Harsh','Singh',887867)
-var u2 = new Admin('Sarthak','Sharma',5432)
-
-u1.greet()
-u2.greet()
-u2.addCourse()
-u2.removeAllCourses()
+let s1 = new MakeStudents("atomic habits","james clear",true)
+console.log(s1);
