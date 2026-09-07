@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <img src="logo.png" alt="" class="logo" />
+        <h1>Task Manager</h1>
+      </div>
+      <div class="nav-right">
+        <button class="dark" id="btnDL"><i class="ri-moon-fill"></i></button>
+        <button class="create">Create Task</button>
+      </div>
+    </nav>
+    <main>
+      <div class="mainTop">
+        <input type="text" placeholder="Search for a Task..." />
+        <select name="category" id="category">
+          <option value="all">All</option>
+          <option value="Work">Work</option>
+          <option value="Study">Study</option>
+          <option value="Home">Home</option>
+          <option value="Personal">Personal</option>
+          <option value="Finance">Finance</option>
+        </select>
+        <button class="reset">Reset</button>
+      </div>
+      <div class="mainCenter"></div>
+    </main>
+    <div class="formDiv">
+      <form action="">
+        <button class="x">x</button>
+        <h1>Create Task</h1>
+        <input
+          type="text"
+          title="Task Title"
+          placeholder="Type a Task Title..."
+        />
+        <select>
+          <option value="Work">Work</option>
+          <option value="Study">Study</option>
+          <option value="Home">Home</option>
+          <option value="Personal">Personal</option>
+          <option value="Finance">Finance</option>
+        </select>
+        <button>Add Task</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
