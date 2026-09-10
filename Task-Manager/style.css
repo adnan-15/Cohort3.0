@@ -60,28 +60,32 @@ nav {
   box-shadow: 1px 1px 5px 1px gray;
 }
 
-
 .light {
   border: 1px solid black;
   background-color: white;
   border-radius: 10px;
   color: black;
 }
-.light:hover {
+body.light #btnDL:hover {
   transform: scale(1.05);
   box-shadow: 1px 1px 5px 1px gray;
 }
-.dark {
+body.dark #btnDL:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 1px 5px 1px gray;
+}
+body.dark #btnDL {
+  background-color: white;
+  color: black;
   border: 1px solid black;
-  color: white;
-  background-color: black;
   border-radius: 10px;
 }
-.dark:hover {
-  transform: scale(1.05);
-  box-shadow: 1px 1px 5px 1px gray;
+body.light #btnDL {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
 }
-
 form {
   display: flex;
   align-items: center;
@@ -97,6 +101,7 @@ form {
   border: 1px solid #000;
   border-radius: 15px;
   gap: 15px;
+  color: black;
   button {
     width: 95px;
     border: none;
@@ -205,29 +210,182 @@ main {
   box-shadow: 1px 1px 5px 1px gray;
 }
 
-
-.mainCenter{
-  /* background-color: blue; */
+.mainCenter {
   display: flex;
-  flex-wrap:wrap;
-  width: 845px;
+  flex-wrap: wrap;
+  width: 90vw;
   margin: 20px;
+  height: 90vh;
 }
 
-.card{
+.card {
   margin-left: 9px;
   margin-bottom: 9px;
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 180px;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  color: black;
+}
+.cardTitle {
+  font-size: 25px;
+}
+
+.cardBtn {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  button {
+    font-size: 13px;
+    padding: 2px;
+    color: white;
+    border-radius: 3px;
+  }
+}
+.dlt {
+  background-color: red;
+  border: 1px solid red;
+}
+.complt {
+  background-color: green;
+  border: 1px solid green;
+}
+.edit {
+  background-color: blue;
+  border: 1px solid blue;
+}
+.cardStatus {
+  color: rgb(228, 122, 1);
+  margin-left: 15px;
+}
+
+.editDiv {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  width: 100vw;
+}
+
+h3 {
+  background-color: yellow;
+  width: fit-content;
+  padding: 5px;
+  margin-left: 29px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  color: black;
+}
+
+.grandParent {
+  height: 400px;
+  width: 400px;
+  background-color: lightcoral;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  .parent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  button {
+    background-color: skyblue;
+    border: 1px solid #000;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+}
+.grandParent1 {
+  height: 400px;
+  width: 400px;
+  background-color: skyblue;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .parent1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  button {
+    background-color: lightcoral;
+    border: 1px solid #000;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+}
+
+.Propagation {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+.renderingPipeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 30px;
+  background-color: gainsboro;
+  margin: 50px;
   border: 1px solid #000;
   border-radius: 10px;
 }
-.cardTitle{
-  font-size: 25px;
+
+.renderingPipeline .card:nth-child(n + 5) {
+  grid-column: span 2;
+}
+.renderingPipeline .card {
+  position: relative;
+}
+
+.renderingPipeline .card:nth-child(1)::after,
+.renderingPipeline .card:nth-child(2)::after,
+.renderingPipeline .card:nth-child(3)::after{
+  content: "→";
+  position: absolute;
+  right: -70px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 60px;
+}
+.renderingPipeline .card:nth-child(5)::after  {
+  content: "→";
+  position: absolute;
+  right: -230px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 60px;
+}
+.renderingPipeline .card:nth-child(7)::after  {
+  content: "→";
+  position: absolute;
+  right: -230px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 60px;
 }

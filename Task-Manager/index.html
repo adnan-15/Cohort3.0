@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body data-theme="light" class="light">
     <nav>
       <div class="nav-left">
         <img src="logo.png" alt="" class="logo" />
@@ -22,6 +22,7 @@
         <button class="create">Create Task</button>
       </div>
     </nav>
+
     <main>
       <div class="mainTop">
         <input type="text" placeholder="Search for a Task..." />
@@ -35,10 +36,75 @@
         </select>
         <button class="reset">Reset</button>
       </div>
-      <div class="mainCenter">
-        
-      </div>
+      <br />
+      <div class="mainCenter"></div>
     </main>
+
+    <div class="Propagation">
+      <div class="grandParent">
+        <h1>Event Bubbling</h1>
+        <h1>GrandParent Div</h1>
+        <div class="parent">
+          <h1>Parent Div</h1>
+          <button class="child">Children</button>
+        </div>
+      </div>
+
+      <div class="grandParent1">
+        <h1>Event Capturing</h1>
+        <h1>GrandParent Div</h1>
+        <div class="parent1">
+          <h1>Parent Div</h1>
+          <button class="child1">Children</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="renderingPipeline">
+      <div class="card">
+        <h1>HTML</h1>
+        <p>Structure of the webpage written using HTML elements.</p>
+      </div>
+
+      <div class="card">
+        <h1>Parsing</h1>
+        <p>Browser reads and processes the HTML document.</p>
+      </div>
+
+      <div class="card">
+        <h1>Tokenization</h1>
+        <p>HTML is broken into tokens such as tags, attributes and text.</p>
+      </div>
+
+      <div class="card">
+        <h1>DOM Tree</h1>
+        <p>Tokens are converted into a hierarchical DOM tree.</p>
+      </div>
+
+      <div class="card">
+        <h1>CSS</h1>
+        <p>CSS provides styling rules for the webpage.</p>
+      </div>
+
+      <div class="card">
+        <h1>CSSOM Tree</h1>
+        <p>CSS rules are parsed and represented as the CSSOM tree.</p>
+      </div>
+
+      <div class="card">
+        <h1>DOM + CSSOM</h1>
+        <p>Browser combines structure and styling information.</p>
+      </div>
+
+      <div class="card">
+        <h1>Render Tree</h1>
+        <p>
+          Final tree containing the elements and styles that are rendered on the
+          screen.
+        </p>
+      </div>
+    </div>
+
     <div class="formDiv">
       <form action="">
         <button class="x">x</button>
@@ -56,6 +122,22 @@
           <option value="Finance">Finance</option>
         </select>
         <button>Add Task</button>
+      </form>
+    </div>
+
+    <div class="editDiv" data-id="">
+      <form action="" class="editForm">
+        <button class="xEdit x">x</button>
+        <h1>Edit Task</h1>
+        <input type="text" title="Task Title" />
+        <select>
+          <option value="Work">Work</option>
+          <option value="Study">Study</option>
+          <option value="Home">Home</option>
+          <option value="Personal">Personal</option>
+          <option value="Finance">Finance</option>
+        </select>
+        <button>Edit Task</button>
       </form>
     </div>
     <script src="script.js"></script>
