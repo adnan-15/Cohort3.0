@@ -2,9 +2,8 @@ import React from "react";
 import { useState } from "react";
 const Counter = () => {
   console.log("count is rendering");
-  let [count, setCount] = useState(0);
-  console.log(count);
-  
+  let (count, setCount) = useState(0);
+  }
   return (
     <div>
       <h1>Count is {count}</h1>
