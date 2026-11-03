@@ -1,7 +1,6 @@
 import React from "react";
 import { useAuth } from "../../hooks/useAuthHook";
 
-
 const LoginPage = () => {
   let { navigate, register, handleSubmit, errors, loginForm } = useAuth();
 
@@ -24,11 +23,11 @@ const LoginPage = () => {
               Email
             </label>
             <input
-              {...register("email", {
-                required: "email is required",
+              {...register("username", {
+                required: "username is required",
               })}
-              type="email"
-              placeholder="Enter your email"
+              type="text"
+              placeholder="Enter your username"
               className="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition"
             />
             {errors.email && <p className="text-red">{errors.email.message}</p>}
