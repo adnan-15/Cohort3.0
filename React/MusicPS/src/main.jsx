@@ -1,11 +1,15 @@
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import AuthContext from './context/AuthContext.jsx'
-import { RouterProvider } from 'react-router'
-import router from './router/router.jsx'
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import AuthContext from "./context/AuthContext.jsx";
+import SongContext from "./context/SongContext.jsx";
+import { ToastContainer } from "react-toastify";
+import AppRoutes from "./router/AppRoutes.jsx"
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <AuthContext>
-    <RouterProvider router={router}/>
-  </AuthContext>
-)
+    <SongContext>
+      <AppRoutes/>
+      <ToastContainer position="bottom-right" autoClose={3000} />
+    </SongContext>
+  </AuthContext>,
+);

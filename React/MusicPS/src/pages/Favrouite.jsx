@@ -6,4 +6,4 @@ const Favrouite = () => {
   )
 }
 
-export default Favrouite
+export default Favrouite 
