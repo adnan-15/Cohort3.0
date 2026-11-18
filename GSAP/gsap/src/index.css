@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'helvetica neue';
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.box{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+}
+
+
+.app{
+    color: yellow;
+    display: flex;
+    gap: 5px;
+}
+#id1{
+    background-color: black;
+    font-size: 20px;
+    height:100px;
+    width: 100px;
+}
+#id2{
+    background-color: black;
+    font-size: 20px;
+    height:100px;
+    width: 100px;
+
+}
+#id3{
+    background-color: black;
+    font-size: 20px;
+    height:100px;
+    width: 100px;
+
+}
